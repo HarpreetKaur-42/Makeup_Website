@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Log In</title>
+        <link rel="stylesheet" href="../Main Makeup website page/indexstyle.css">
+        <style>
+            body{
+                font-family: 'Poppins', sans-serif;
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: url('../Images/login.background.jpg') no-repeat;
+                column-gap: 30px;
+                background-size: cover;
+                background-position: center;
+                margin: 0;
+                filter: brightness(103%) contrast(100%);
+            }
+            p{
+                text-align: center;
+                align-items: center;
+                padding-top: 20px;
+                font-size: 15px;
+            }
+            .forgot-remember{
+                text-align: left;
+                align-items: center;
+                padding-top: 20px;
+                font-size: 8px;
+            }
+            h1{
+                font-size: 3.5rem;
+                text-align: center;
+                color: crimson;
+                padding-top: 15px;
+            }
+            h4{
+                 text-align: center;
+            }
+            form{
+                width: 290px;
+                margin-left: 20px;
+            }
+            form label{
+                 display: flex;
+                 font-weight: bold;
+                 margin-top: 10px;
+                 font-size: 20px;
+                }
+            form input{
+                width: 100%;
+                padding: 7px;
+                border: none;
+                background: transparent;
+                border: 1px solid rgb(23, 20, 20);
+                border-radius: 6px;
+                outline: none;
+            }
+            button{
+                width: 310px;
+                height: 40px;
+                margin-top: 20px;
+                border: none;
+                border-radius: 8px;
+                background-color: rgb(236, 13, 176);
+                color: white;
+                font-size: 18px;
+            }
+            .para-2 a, .forgot-remember a {
+                color: blue;
+                text-decoration: none;
+                font-weight: 100;
+            }
+            .forgot-remember{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 14px;
+            }
+            .forgot-remember input[type="checkbox"]{
+                margin-right: 5px;
+                transform: scale(0.4);
+            }
+        </style>
+    </head>
+    <body>
+        <div class ="login-box">
+            <form>
+                <h1>Log In</h1>
+                <label>Email</label>
+                <input type="email" place-holder="" required>
+                <label>Password</label>
+                <input type="password" place-holder="" required>
+                <div class="forgot-remember">
+                    <label><input type="checkbox" name="remember">Remember me</label>
+                    <a href="/reset-password" class="forgot-password">Forgot Password?</a>
+                </div>
+                <button>Log in</button>
+                <div>
+                    <p class="para-2">Don't have an account? <a href ="Sign Up.html" > Signup Here</a><br>
+                    <a href="../Main Makeup website page/index.html">&nbsp &nbsp;Home</a></p>
+                </div>
+            </form>
+        </div>
+        <script>
+            let loginBtn = document.querySelector('button');
+            loginBtn.addEventListener('click', showMsg);
+
+            function showMsg(){
+                alert("!!..LOGIN SUCCESSFULLY..!!");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sign Up</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet"  href="../Main Makeup website page/indexstyle.css">
+        <style>
+            body{
+                font-family: 'Poppins', sans-serif;
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: url('../Images/login.background.jpg') no-repeat;
+                column-gap: 30px;
+                background-size: cover;
+                background-position: center;
+                margin: 0;
+                filter: brightness(103%) contrast(100%);
+            }
+            p{
+                text-align: center;
+                align-items: center;
+                padding-top: 20px;
+                font-size: 15px;
+            }
+            h1{
+                font-size: 3.5rem;
+                text-align: center;
+                color: crimson;
+                padding-top: 15px;
+            }
+            h4{
+                 text-align: center;
+            }
+            form{
+                width: 290px;
+                margin-left: 20px;
+            }
+            form label{
+                 display: flex;
+                 font-weight: bold;
+                 margin-top: 10px;
+                 font-size: 20px;
+                }
+            form input{
+                width: 100%;
+                padding: 7px;
+                border: none;
+                background: transparent;
+                border: 1px solid rgb(23, 20, 20);
+                border-radius: 6px;
+                outline: none;
+            }
+            button{
+                width: 310px;
+                height: 40px;
+                margin-top: 20px;
+                border-radius: 8px;
+                background-color: rgb(236, 13, 176);
+                color: white;
+                font-size: 18px;
+            }
+            a{
+                text-decoration: underline;
+            }
+            .para-2 a {
+                color: blue;
+                text-decoration: none;
+                font-weight: 100;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="signup-box">
+            <form>
+                <h1>Sign Up</h1>
+                <label>First Name</label>
+                <input type="text" place-holder="" required>
+                <label>Last Name</label>
+                <input type="text" place-holder="" required>
+                <label>Email</label>
+                <input type="email" place-holder="" required>
+                <label>Password</label>
+                <input type="password" place-holder="" required>
+                <label>Confirm Password</label>
+                <input type="password" place-holder="" required>
+                <button>Sign up</button>
+                <p>By clicking the Sign up button,you agree to our<br>
+                <a href="#">Terms and Condition</a>and <a href="#">Policy and Privacy</a></p>
+                <div>
+                    <p class="para-2">Already have an account? <a href="Log In.html">Login Here</a></a>
+                        <a href="../Main Makeup website page/index.html">&nbsp &nbsp;Home</a></p>
+                </div>
+            </form>
+        </div>
+        <script>
+            let loginBtn = document.querySelector('button');
+            loginBtn.addEventListener('click', showMsg);
+
+            function showMsg(){
+                alert("!!..SIGNUP SUCCESSFULLY..!!");
+            }
+        </script>
+    </body>
+</html>
