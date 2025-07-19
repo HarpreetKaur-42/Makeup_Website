@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Cosmatic website</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="indexstyle.css">
+
+</head>
+<body>
+    <marquee behavior="scroll" direction="left" scrollamount="10">
+        <span class="blinking-text">Love your skin, Love your soul!!</span>
+    </marquee>
+<!-- header setion start page -->
+<section id="header" class="header">
+<h2 class="logo"><img src="../Images/logo1.jpg" alt="Company logo" width="120px" height="100px" /></h2>
+<!--<a href="#" class="logo"><i class="fas fa-female"></i>cosmetics</a>-->
+<nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#shop">Shop</a>
+    <a href="#message">Message</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#blogs">Blogs</a>
+</nav>
+
+<div class="icons">
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <a href="#" class="fas fa-heart"></a>
+    <a href="#" class="fas fa-shopping-cart"></a>
+</div>
+<div class="menu">
+    <a href="../Additional webpages/Log In.html"><button class="btnLogin">Login</button></a>
+    <a href="../Additional webpages/Sign Up.html"><button class="btnLogin">Signup</button></a>
+</div>
+</section>
+<!-- header section ends -->
+
+
+<!-- home section starts -->
+
+<section class="home" id="home">
+
+    <div class="slide active" style="background:url(../Images/1.jpg) no-repeat; background-size: cover; background-position: center;">
+        <div class="content">
+            <span>Glamour<br>Heaven</span>
+            <h3>Makeup is the art of enhancing natural beauty,<br>empowering individuals to express themselves <br>with confidence and creativity.</h3>
+            <a href="../Additional webpages/whatismakeup.html" class="btn">Read more</a>
+        </div>
+    </div>
+
+    <div class="slide" style="background:url(../Images/2.jpg) no-repeat; background-size: cover; background-position: center;">
+        <div class="content">
+            <span>Glamour<br>Heaven</span>
+            <h3>Makeup is the art of enhancing natural beauty,<br>empowering individuals to express themselves <br>with confidence and creativity.</h3>
+            <a href="../Additional webpages/whatismakeup.html" class="btn">Read more</a>
+        </div>
+    </div>
+
+    <div class="slide" style="background:url(../Images/3.jpg) no-repeat; background-size: cover; background-position: center;">
+        <div class="content">
+            <span>Glamour<br>Heaven</span>
+            <h3>Makeup is the art of enhancing natural beauty,<br>empowering individuals to express themselves <br>with confidence and creativity.</h3>
+            <a href="../Additional webpages/whatismakeup.html" class="btn">Read more</a>
+        </div>
+    </div>
+
+    <div id="next-slide" onclick="next()" class="fas fa-angle-right"></div>
+    <div id="prev-slide" onclick="prev()" class="fas fa-angle-left"></div>
+</section>
+<!-- home section ends -->
+
+<!-- category section starts -->
+<section class="category">
+    <div class="box-container">
+
+        <a href="../Additional webpages/makeupN.html" class="box">
+            <img src="../Images/8.png">
+            <h3>MAKEUP</h3>
+        </a>
+
+        <a href="../Additional webpages/lip.html" class="box">
+            <img src="../Images/5.png">
+            <h3>LIPS</h3>
+        </a>
+
+        <a href="../Additional webpages/hairs.html" class="box">
+            <img src="../Images/6.png">
+            <h3>HAIRS</h3>
+        </a>
+
+        <a href="../Additional webpages/eyes.html" class="box">
+            <img src="../Images/7.png">
+            <h3>EYE</h3>
+        </a>
+
+        <a href="../Additional webpages/skincare.html" class="box">
+            <img src="../Images/4.png">
+            <h3>SKINCARE</h3>
+        </a>
+
+        <a href="../Additional webpages/Nails.html" class="box">
+            <img src="../Images/9.png">
+            <h3>NAILART</h3>
+        </a>
+
+    </div>
+</section>
+<!-- category section ends -->
+
+<!-- about section starts -->
+<section class="about" id="about">
+    <div class="img">
+        <img src="../Images/10.jpg" alt="">
+    </div>
+    <div class="content">
+        <div class="box">
+            <h3>About <span>Us...</span></h3>
+            <p>At Glamour Heaven, we believe that beauty is a form of art and self-expression that everyone should be able to access and enjoy.A passionate makeup artist and beauty enthusiast, our brand has always been about more than just cosmetics.We are dedicated to empowering individuals across the globe to feel confident, radiant, and true to themselves.</p>
+            <a href="../Additional webpages/aboutus.html" class="btn">Read more</a>
+        </div>
+        <div class="icons-container">
+            <div class="icons">
+                <i class="fas fa-address-card"></i>
+                <p>Address card</p>
+            </div>
+            <div class="icons">
+                <i class="fas fa-award"></i>
+                <p>Award cards</p>
+            </div>
+            <div class="icons">
+                <i class="fas fa-gift"></i>
+                <p>Gift cards</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+<!-- shop section starts -->
+<section class="shop" id="shop">
+    <h1 class="heading">Our <span>Shop</span></h1>
+    <div class="box-container">
+
+        <div class="box">
+            <div class="img">
+                <img src="../Images/11.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Compact Powder</h3>
+                <div class="price">$40-<span>$200.99</span></div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+                <img src="../Images/12.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Lactic acid treatment</h3>
+                <div class="price">$40-<span>$200.99</span></div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+                <img src="../Images/13.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Midnight must</h3>
+                <div class="price">$40-<span>$200.99</span></div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+                <img src="../Images/14.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>face and Body foundation</h3>
+                <div class="price">$40-<span>$200.99</span></div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+                <img src="../Images/15.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Eyeliner pack</h3>
+                <div class="price">$40-<span>$200.99</span></div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+                <img src="../Images/16.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Moisture balam</h3>
+                <div class="price">$40-<span>$200.99</span></div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--section shop end-->
+
+<!--banner section -->
+<section class = "banner">
+    <div class ="content">
+        <span> Special <span>Offer</span> </span>
+        <h3> Upto 50% off </h3>
+        <p>Unlock radiant beauty with our exclusive makeup offers! For a limited time, enjoy up to 30% off on our bestselling lipsticks, eyeshadows, and more. Don’t miss out—elevate your beauty routine with Glamour Heaven today!</p>
+        <a href="#shop" class="btn"> Shop now </a>
+    
+    </div>
+</section>
+<!--banner section ends-->
+
+<!--Gallery section start-->
+<section class="gallery" id= "gallery">
+    <h1 class ="heading"> Our <span> Gallery</span></h1>
+    <div class= "box-container">
+        <div class ="box">
+            <img src = "../Images/nail3.jpg">
+            <div class ="content">
+                <h3>Nailart</h3>
+                <p>Transform your fingertips into tiny canvases of<br>creativity with our trendsetting nail art designs that<br>elevate your style with every gesture.</p> 
+                <a href ="../Additional webpages/Nails.html" class="btn"> read more</a>
+            </div>
+        </div>
+        <div class ="box">
+            <img src ="../Images/19.jpg">
+            <div class ="content">
+                <h3>Eyes Makeup</h3>
+                <p>Elevate your gaze with our stunning collection of eyeshadows, eyeliners, and mascaras, crafted to<br>transform your eyes into a captivating work of art.</p> 
+                <a href ="../Additional webpages/eyes.html" class="btn"> read more</a>
+            </div>
+        </div>
+        <div class ="box">
+            <img src ="../Images/20.jpg">
+            <div class ="content">
+                <h3>Lips Makeup</h3>
+                <p>Indulge your lips in our exquisite selection of lipsticks, glosses, and liners, each designed to give you the<br>perfect pout with vibrant, long-lasting color.</p> 
+                <a href ="../Additional webpages/lip.html" class="btn"> read more</a>
+            </div>
+        </div>
+        <div class ="box">
+            <img src ="../Images/21.jpg">
+            <div class ="content">
+                <h3>Hairstyle</h3>
+                <p>Explore our diverse range of hairstyling products and tutorials, designed to help you achieve flawless,<br>salon-quality looks from the comfort of your home.</p> 
+                <a href ="../Additional webpages/hairs.html" class="btn"> read more</a>
+            </div>
+        </div>
+        <div class ="box">
+            <img src ="../Images/22.jpg">
+            <div class ="content">
+                <h3>Makeup</h3>
+                <p>Unleash your inner artist with our premium makeup<br>selection, offering everything from essential basics to<br>the latest innovations for a flawless finish.</p> 
+                <a href ="../Additional webpages/makeupN.html" class="btn"> read more</a>
+            </div>
+        </div>
+        <div class ="box">
+            <img src ="../Images/23.jpg">
+            <div class ="content">
+                <h3>Skincare</h3>
+                <p>Discover our skincare essentials, designed to nourish, protect, and enhance your natural glow for a youthful complexion.</p> 
+                <a href ="../Additional webpages/skincare.html" class="btn"> read more</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--Gallery section ends-->
+
+<!--Message section starts-->
+<section class="message" id="message">
+    <form action="">
+        <h3>Send us <span>your reviews</span></h3>
+        <input type="text" placeholder="Full name" class="box">
+        <input type="email" placeholder="Email" class="box">
+        <input type="number" placeholder="Phone" class="box">
+        <textarea placeholder="Message" class="box" cols="30" rows="10"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form> 
+</section>
+<!--Message section ends-->
+
+<!--Blog section starts-->
+<section class="blogs" id="blogs">
+    <h1 class="heading">Our <span>Blogs</span></h1>
+    <div class="box-container">
+
+        <div class="box">
+            <div class="img">
+                <img src="../Images/25.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="date">
+                <h3>12</h3>
+                <span>Jan</span>
+            </div>
+            <a href="#" class="user"> <i class="fas fa-user"></i>Anchita Kaur</a>
+            <a href="#" class="title">Mastering the Art of Eye Makeup</a>
+            <p>Eye makeup can transform your look from ordinary to extraordinary.Whether you're preparing for a day at the office or a night out...</p>  
+            <a href="../Additional webpages/blog1.html" class="btn">Read more</a>
+        </div>
+    </div> 
+
+    <div class="box">
+        <div class="img">
+            <img src="../Images/26.png" alt="">
+        </div>
+        <div class="content">
+            <div class="date">
+            <h3>20</h3>
+            <span>Feb</span>
+        </div>
+        <a href="#" class="user"> <i class="fas fa-user"></i>Priyanka Dikshit</a>
+        <a href="#" class="title">The Essential Skincare Routine For Every Skin Type</a>
+        <p>Achieving flawless skin isn't just about the makeup you wear; it starts with a solid skincare routine...</p>  
+        <a href="../Additional webpages/blog2.html" class="btn">Read more</a>
+    </div>
+</div> 
+
+<div class="box">
+    <div class="img">
+        <img src="../Images/27.jpg" alt="">
+    </div>
+    <div class="content">
+        <div class="date">
+        <h3>25</h3>
+        <span>Mar</span>
+    </div>
+    <a href="#" class="user"> <i class="fas fa-user"></i>Harnoor Kaur</a>
+    <a href="#" class="title">Flower Bun Hairstyle</a>
+    <p>The flower bun hairstyle is an enchanting and elegant choice that adds a touch of grace to any occasion.Perfect for weddings,proms, or even a...</p>  
+    <a href="../Additional webpages/blog3.html" class="btn">Read more</a>
+</div>
+</div> 
+
+
+    </div>
+</section>
+<!--Blog section ends-->
+
+<!--service section starts-->
+<section class= "services">
+    <div class ="box">
+        <img src ="../Images/28.jpg" alt="">
+        <h3> Free Delivery </h3>
+        <p>Enjoy our Free Delivery Service on all your beauty favorites, right to your doorstep, with no minimum purchase required!</p>
+    </div>
+
+    <div class ="box">
+        <img src ="../Images/29.png" alt="">
+        <h3> Secure Payments </h3>
+        <p>Shop with confidence! We offer secure payment options to ensure your transactions are safe and your personal information is protected.</p>
+    </div>
+
+    <div class ="box">
+        <img src ="../Images/30.png" alt="">
+        <h3> 24/7 Support</h3>
+        <p>Need assistance? Our dedicated support team is available 24/7 to help you with any questions or concerns you might have. Contact us anytime!</p>
+    </div>
+</section>
+<!--service section ends-->
+
+<!--footer section starts-->
+<section class ="footer">
+    <div class ="box-container">
+        <div class="box">
+            <h3>Quick links</h3>
+            <a class ="link" href="#home"><i class ="fas fa-angle-right"></i>Home</a>
+            <a class ="link" href="#about"><i class ="fas fa-angle-right"></i>About</a>
+            <a class ="link" href="#shop"><i class ="fas fa-angle-right"></i>Shop</a>
+            <a class ="link" href="#message"><i class ="fas fa-angle-right"></i>Message</a>
+            <a class ="link" href="#gallery"><i class ="fas fa-angle-right"></i>Gallery</a>
+            <a class ="link" href="#blogs"><i class ="fas fa-angle-right"></i>Blogs</a>
+        </div>
+        <div class="box"> 
+            <h3>Extra links </h3>
+            <a class="link" href = "#"><i class ="fas fa-angle-right"></i>My favorite</a>
+            <a class="link" href = "#"><i class ="fas fa-angle-right"></i>My order</a>
+            <a class="link" href = "#"><i class ="fas fa-angle-right"></i>My whishlist</a>
+            <a class="link" href = "#"><i class ="fas fa-angle-right"></i>Private policy</a>
+            <a class="link" href = "#"><i class ="fas fa-angle-right"></i>Terms of use</a>
+        </div>
+
+        <div class ="box">
+            <h3>Contact info</h3>
+            <a class ="link" href ="#"><i class="fas fa-phone"></i>+111-222-3333</a>
+            <a class ="link" href ="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+            <a class ="link" href ="#"><i class="fas fa-envelope"></i>abc123@gmail.com</a>
+            <a class ="link" href ="https://www.google.co.in/maps/place/Delhi/@28.6436846,76.7635722,10z/data=!3m1!4b1!4m6!3m5!1s0x390cfd5b347eb62d:0x37205b715389640!8m2!3d28.7040592!4d77.1024902!16zL20vMDlmMDc?entry=ttu"><i class="fas fa-map"></i>Delhi, India-110803</a>
+                <div class ="share">
+                    <a href ="https://www.facebook.com/facebook/" class="fab fa-facebook"></a>
+                    <a href ="https://twitter.com/?lang=en-in" class="fab fa-twitter"></a>
+                    <a href ="https://www.instagram.com/?hl=en" class="fab fa-instagram"></a>
+                    <a href ="https://www.linkedin.com/company/linkedin/?originalSubdomain=in" class="fab fa-linkedin"></a>
+                </div>
+        </div>
+        <div class="box">
+            <h3>Newsletter</h3>
+            <p>Subscribe for latest updates</p>
+            <form action="">
+                <input type="email" name="" placeholder="Email address" id="" class="email">
+                <input type="submit" value="subscribe" id="subscribe" class="btn">
+            </form>
+        </div>
+    </div>
+    <div class="credit">Created by <span> Harpreet and Amrit </span> || All right reserved</div>
+</section>
+<!--footer section ends-->
+
+<!-- custom js file link -->
+<script src="main.js"></script>
+
+</body>
+</html>
